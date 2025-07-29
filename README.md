@@ -1,2 +1,3 @@
 # WebsitebuildingBakery
 Practicing building a website that includes forms and links
+Web siting building practice about a made-up bakery This is a project website for a make-believe website for a bakery. So, long story short - I had to make a brand new repository. But I remember the commits I had which were: Added/pushed Style.css and index.HTML Added multiple pictures and different fonts Played around with sizing images and margins Added 3 buttons to the screen that will have links to different pages. This includes, booking events, contacting the bakery, and applying for a job. Since the project specifically stated to include forms, I might as well have pages that need them.
