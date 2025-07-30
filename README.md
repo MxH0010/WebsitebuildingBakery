@@ -1,4 +1,4 @@
-My name i Madalyn Hedges or Madalyn Villanueva- I'm in the process of a name change in case you were wondering.
+My name is Madalyn Hedges or Madalyn Villanueva- I'm in the process of a name change in case you were wondering.
 The purpose of this project was to design a page dedicated to a bakery who is just starting out on building a webpage to promote their buiness. The page includes links to, scheduling events, a recipe from the bakery, and a form to fill out for applying for a job there. I used pages that required forms for bakeries to fill out so that I have a chance to display how I build my forms.
 To use the website, it is pretty simple - Each link has a button that takes you to a spepcific page of the website. There is a "Back to Home" button on each page to take you back to the main page. The forms don't send out or are of use. There is a submit button, but it doesn't submit anything at the present time.
 I used 4 HTML pages and 4 CSS pages. Each are linked to the corresponding page. I did attempt to use Bootstrap, but I got overwhlemed with possibilities and would be working on the project forever and ever- So I opted out of it and stuck with CSS.
