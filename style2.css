@@ -1,0 +1,51 @@
+head {
+    font-size: xx-large;
+             -webkit-box-shadow: 5px 5px 15px 5px #F6D8FF; 
+box-shadow: 5px 5px 15px 5px #F6D8FF;
+}
+
+h1 {
+    @font-face {
+        font-family: 'Algerian'; /* Algerian */
+        src: C:\Users\mhfir\OneDrive\Desktop\Project 1\ALGER.TTF
+        font-weight: normal; 
+                font-style: normal;  
+                }
+    
+        font-family: 'MyCustomFont', sans-serif; /* Fallback font included for safety */
+    }
+
+    h1 {
+        font-family: 'Algerian', serif;
+
+        text-align: center; color: rgb(255, 255, 255);
+   margin-top: 60px; font-size: 70px;
+}
+body{
+    background-image: url(falling-shiny-glitter-purple-confetti-isolated-black-background-christmas-happy-new-year-confetti_209425-89.jpg);
+text-align: center; color: rgb(255, 255, 255);
+background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+
+}
+h2{
+    @font-face {
+        font-family: 'Algerian'; /* Algerian */
+        src: C:\Users\mhfir\OneDrive\Desktop\Project 1\ALGER.TTF
+        font-weight: normal; 
+                font-style: normal;  
+                }
+    
+        font-family: 'MyCustomFont', sans-serif; /* Fallback font included for safety */
+     
+        font-family: 'Algerian', serif;
+
+        text-align: center; color: rgb(255, 255, 255);
+   margin-top: 10px; font-size: 20px;
+}
+
+div{
+    column-count:3; background-color:rgba(116, 114, 112, 0.281)
+}
