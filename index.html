@@ -30,77 +30,109 @@ Sugar Skull
 </div>
 <br> <br>
 
-<style>
-div.gallery {
-  margin: 5.7%;
- 
-  float: left;
-  width:130px;
-  text-align: center;
-}
+<div class="cards">
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+  <input type="radio" id="radio-1" name="radio-card" checked>
+  <article class="card" style="--angle:4deg">
+    <img class="card-img" src="PastelGothicCake1.webp">
+   <div class="card-data">
+      <span class="card-num">1/7</span>
+      <h2>Alejandro Escamilla</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores accusantium cumque atque? Ex voluptatem quisquam temporibus. Provident rerum quae nemo eligendi fugiat!</p>
+      <footer>
+        <label for="radio-7" aria-label="Previous">&#10094;</label>
+        <label for="radio-2" aria-label="Next">&#10095;</label>
+      </footer>
+    </div>
+  </article>
 
-div.gallery img {
-  width: 200%;
-  height: auto;
-}
+  <!-- card 2 -->
+  <input type="radio" id="radio-2" name="radio-card">
+  <article class="card" style="--angle:-8deg">
+    <img class="card-img" src="PastelGothicCake2.webp">
+    <div class="card-data">
+      <span class="card-num">2/7</span>
+      <h2>Shyamanta Baruah</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores accusantium cumque atque? Ex voluptatem quisquam temporibus. Provident rerum quae nemo eligendi fugiat!</p>
+      <footer>
+        <label for="radio-1" aria-label="Previous">&#10094;</label>
+        <label for="radio-3" aria-label="Next">&#10095;</label>
+      </footer>
+    </div>
+  </article>
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-</style>
-</head>
-<body>
+  <!-- card 3 -->
+    <input type="radio" id="radio-3" name="radio-card">
+  <article class="card" style="--angle:-7deg">
+    <img class="card-img" src="PastelGothicCake3.webp">
+    <div class="card-data">
+      <span class="card-num">3/7</span>
+      <h2>Luke Chesser</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores accusantium cumque atque? Ex voluptatem quisquam temporibus. Provident rerum quae nemo eligendi fugiat!</p>
+      <footer>
+        <label for="radio-2" aria-label="Previous">&#10094;</label>
+        <label for="radio-4" aria-label="Next">&#10095;</label>
+      </footer>
+    </div>
+  </article>
 
+  <!-- card 4 -->
+    <input type="radio" id="radio-4" name="radio-card">
+  <article class="card" style="--angle:11deg">
+    <img class="card-img" src="PastelGothicCookies.jpg">
+    <div class="card-data">
+      <span class="card-num">4/7</span>
+      <h2>Ilham Rahmansyah</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores accusantium cumque atque? Ex voluptatem quisquam temporibus. Provident rerum quae nemo eligendi fugiat!</p>
+      <footer>
+        <label for="radio-3" aria-label="Previous">&#10094;</label>
+        <label for="radio-5" aria-label="Next">&#10095;</label>
+      </footer>
+    </div>
+  </article>
 
+  <!-- card 5 -->
+    <input type="radio" id="radio-5" name="radio-card" >
+  <article class="card" style="--angle:13deg">
+    <img class="card-img" src="PastelGothicCookies2.jpg">
+    <div class="card-data">
+      <span class="card-num">5/7</span>
+      <h2>petradr</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores accusantium cumque atque? Ex voluptatem quisquam temporibus. Provident rerum quae nemo eligendi fugiat!</p>
+      <footer>
+        <label for="radio-4" aria-label="Previous">&#10094;</label>
+        <label for="radio-6" aria-label="Next">&#10095;</label>
+      </footer>
+    </div>
+  </article>
 
-<div class="gallery">
-  <a target="_blank" href="PastelGothicCake3.webp">
-    <img src="PastelGothicCake3.webp" alt="Northern Lights" width="600" height="400">
-  </a>
-  <div class="desc">Customize ANY cake!</div>
-</div>
+  <!-- card 6 -->
+    <input type="radio" id="radio-6" name="radio-card">
+  <article class="card" style="--angle:-17deg">
+    <img class="card-img" src="PastelGothicCupcakes.jpg" >
+    <div class="card-data">
+      <span class="card-num">6/7</span>
+      <h2>Caleb George</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores accusantium cumque atque? Ex voluptatem quisquam temporibus. Provident rerum quae nemo eligendi fugiat!</p>
+      <footer>
+        <label for="radio-5" aria-label="Previous">&#10094;</label>
+        <label for="radio-7" aria-label="Next">&#10095;</label>
+      </footer>
+    </div>
+  </article>
 
-<div class="gallery">
-  <a target="_blank" href="PastelGothicCookies.jpg">
-    <img src="PastelGothicCookies.jpg" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">Customize ANY cookie!</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="PastelGothicCookies2.jpg">
-    <img src="PastelGothicCookies2.jpg" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">"This bakery NEVER fails to deliver!""</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="PastelGothicCupcakes.jpg">
-    <img src="PastelGothicCupcakes.jpg" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">"The Devil's Food cake is to DIE for!""</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="skull-lover-cookies-448x448.jpg">
-    <img src="skull-lover-cookies-448x448.jpg" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">For parties or for yourself!</div>
-</div>
-
-<img src="Bakery building.png" alt="building" class="center">
-
-
-<h3>
-    Come see us at 258B Ravenwood Lane, Willow Creek, California 90210, United States!
-    First 3 Customers of the day get 10% off!
-</h3>
-</body>
-
-
-</html>
+  <!-- card 7 -->
+  <input type="radio" id="radio-7" name="radio-card" >
+  <article class="card" style="--angle:20deg">
+    <img class="card-img"src="skull-lover-cookies-448x448.jpg">
+    <div class="card-data">
+      <span class="card-num">7/7</span>
+      <h2>Austin Ban</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores accusantium cumque atque? Ex voluptatem quisquam temporibus. Provident rerum quae nemo eligendi fugiat!</p>
+      <footer>
+        <label for="radio-6" aria-label="Previous">&#10094;</label>
+        <label for="radio-1" aria-label="Next">&#10095;</label>
+      </footer>
+    </div>
+  </article>
+  </dvi>
