@@ -187,7 +187,6 @@ body {
         background: linear-gradient(to left, transparent 0%, transparent 13%, @c 15%, #fff 17%, #fff 100%);
     }
 }
-
  h2 {
     text-align: center; color: rgb(255, 255, 255);
     font-family: 'Gabriola'; /* Gabriola */
