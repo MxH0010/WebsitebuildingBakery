@@ -1,0 +1,469 @@
+
+
+
+h1 {
+    @font-face {
+        font-family: 'Algerian'; /* Algerian */
+        src: C:\Users\mhfir\OneDrive\Desktop\Project 1\ALGER.TTF
+        font-weight: normal; 
+                font-style: normal;  
+                }
+    
+        font-family: 'MyCustomFont', sans-serif; /* Fallback font included for safety */
+    }
+
+    h1 {
+        font-family: 'Algerian', serif;
+
+        text-align: center; color: rgb(43, 255, 0);
+   margin-top: 1%; font-size: 70px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+@b: #FFE0B5;
+@c: #CA2E55;
+
+@bg1: #301916;
+@bg2: #462521;
+@bg3: #8A6552;
+
+
+html, body {
+    min-height: 100%;
+}
+img{
+  height: 400px;
+}
+
+body {
+    background: linear-gradient(to right, @bg1 0%, @bg1 5%, @bg3 5%, @bg3 10%, @bg2 10%, @bg2 15%, @bg1 15%, @bg1 20%, @bg2 20%, @bg2 25%, @bg3 25%, @bg3 30%, @bg1 30%, @bg1 35%, @bg3 35%, @bg3 40%, @bg2 40%, @bg2 45%, @bg1 45%, @bg1 50%, @bg3 50%, @bg3 55%, @bg2 55%, @bg2 60%, @bg1 60%, @bg1 65%, @bg3 65%, @bg3 70%, @bg1 70%, @bg1 75%, @bg2 75%, @bg2 80%, @bg1 80%, @bg1 85%, @bg3 85%, @bg3 90%, @bg2 90%, @bg2 95%, @bg1 95%, @bg1 100%);
+    
+    text-align: center;
+}
+
+
+@keyframes sway {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: ease-in-out;
+    }
+    10% {
+        transform: rotate(-12deg);
+        animation-timing-function: ease-in-out;
+    }
+    30% {
+        transform: rotate(8deg);
+        animation-timing-function: ease-in-out;
+    }
+    45% {
+        transform: rotate(-4deg);
+        animation-timing-function: ease-in-out;
+    }
+    60% {
+        transform: rotate(2deg);
+        animation-timing-function: ease-in-out;
+    }
+    70% {
+        transform: rotate(-.1deg);
+        animation-timing-function: ease-in-out;
+    }
+    75% {
+        transform: rotate(.05deg);
+        animation-timing-function: ease-in-out;
+    }
+    80% {
+        transform: rotate(0);
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+.example {
+    position: relative;
+    display: inline-block;
+    font-family: 'Spicy Rice', cursive;
+    line-height: 1;
+    font-size: 64px;
+    padding: 0px 32px;
+    margin: 0% 0;
+    animation: sway 5s linear infinite;
+    transform-origin: 50% -32px;
+    background: linear-gradient(to right, @c 0%, @c 100%),
+                linear-gradient(to right, @c 0%, @c 100%),
+                linear-gradient(to right, @c 0%, @c 100%),
+                linear-gradient(to right, @c 0%, @c 100%),
+        
+                radial-gradient(circle at 100% 100%, @c 0%, @c 44%, #fff 46%, #fff 55%, @c 57%, @c 70%, transparent 72%, transparent 100%),
+                radial-gradient(circle at 0 100%,    @c 0%, @c 44%, #fff 46%, #fff 55%, @c 57%, @c 70%, transparent 72%, transparent 100%),
+                radial-gradient(circle at 0 0,       @c 0%, @c 44%, #fff 46%, #fff 55%, @c 57%, @c 70%, transparent 72%, transparent 100%),
+                radial-gradient(circle at 100% 0,    @c 0%, @c 44%, #fff 46%, #fff 55%, @c 57%, @c 70%, transparent 72%, transparent 100%),
+
+                linear-gradient(to top,    @c 0%, @c 63%, #fff 65%, #fff 78%, @c 80%, @c 100%),
+                linear-gradient(to bottom, @c 0%, @c 63%, #fff 65%, #fff 78%, @c 80%, @c 100%),
+
+                linear-gradient(to left,   @c 0%, @c 63%, #fff 65%, #fff 78%, @c 80%, @c 100%),
+                linear-gradient(to left,   @c 0%, @c 63%, #fff 65%, #fff 78%, @c 80%, @c 100%),
+                linear-gradient(to right,  @c 0%, @c 63%, #fff 65%, #fff 78%, @c 80%, @c 100%),
+                linear-gradient(to right,  @c 0%, @c 63%, #fff 65%, #fff 78%, @c 80%, @c 100%),
+
+                radial-gradient(circle at 0 50%,    transparent 0%, transparent 30%, @c 32%, @c 42%, #fff 44%, #fff 48%, @c 50%, @c 100%),
+                radial-gradient(circle at 100% 50%, transparent 0%, transparent 30%, @c 32%, @c 42%, #fff 44%, #fff 48%, @c 50%, @c 100%),
+
+                linear-gradient(to right, @c 0%, @c 100%);
+    
+    background-size: 3px 3px,
+        3px 3px,
+        3px 3px,
+        3px 3px,
+        
+        16px 16px,
+        16px 16px,
+        16px 16px,
+        16px 16px,
+        
+        ~'calc(100% - 32px + 4px)' 16px,
+        ~'calc(100% - 32px + 4px)' 16px,
+        
+        16px ~'calc(50% - 32px)',
+        16px ~'calc(50% - 32px)',
+        16px ~'calc(50% - 32px)',
+        16px ~'calc(50% - 32px)',
+        
+        32px 32px,
+        32px 32px,
+        
+        ~'calc(100% - 32px + 4px)' ~'calc(100% - 32px)';
+    
+    background-position: 0 ~'calc(50% - 16px)',
+        100% ~'calc(50% - 16px)',
+        0 ~'calc(50% + 16px)',
+        100% ~'calc(50% + 16px)',
+        
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        
+        ~'calc(16px - 1px)' 0,
+        ~'calc(16px - 1px)' 100%,
+        
+        0 16px,
+        0 ~'calc(100% - 16px)',
+        100% 16px,
+        100% ~'calc(100% - 16px)',
+        
+        0 50%,
+        100% 50%,
+        
+        ~'calc(16px - 1px)' 16px;
+    
+    background-repeat: no-repeat;
+    
+    &::before {
+        content: '';
+        height: 2px;
+        width: 51%;
+        position: absolute;
+        top: -16px;
+        left: 0;
+        z-index: -1;
+        transform: rotate(-15deg);
+        background: linear-gradient(to right, transparent 0%, transparent 13%, @c 15%, #fff 17%, #fff 100%);
+    }
+    
+    &::after {
+        content: '';
+        height: 2px;
+        width: 51%;
+        position: absolute;
+        top: -16px;
+        right: 0;
+        z-index: -1;
+        transform: rotate(15deg);
+        background: linear-gradient(to left, transparent 0%, transparent 13%, @c 15%, #fff 17%, #fff 100%);
+    }
+}
+
+ h2 {
+    text-align: center; color: rgb(255, 255, 255);
+    font-family: 'Gabriola'; /* Gabriola */
+        src: C:\Users\mhfir\OneDrive\Desktop\Project 1\ALGER.TTF;
+        font-weight: normal; 
+                font-style: normal;
+              font-size:30px;}
+               
+    .button-container {
+  display: flex; 
+  justify-content: center; 
+  gap: 15px; 
+  margin-top: 20px; 
+}
+
+.my-button {
+  background-color: rgb(43, 255, 0); 
+  color: rgb(0, 0, 0); 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px; 
+  font-weight: 800;
+  transition: background-color 0.3s ease; 
+  margin-bottom: 45px;
+}
+
+.my-button:hover {
+  background-color: #45a049; 
+}     
+     body {
+ background-image: url("blacklace2.webp");
+ background-color: #ffffff;
+ background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+}
+
+*,::before,::after{
+  margin: 0;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+/* general styling */
+html {
+	color-scheme: dark light;
+}
+img{
+  max-width: 100%;
+}
+/* Hide radio buttons */
+input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body{
+
+  min-height: 100svh;
+  display: grid;
+  place-content: center;
+  margin: 0;
+  padding: 1rem;
+  font: 1rem system-ui;
+}
+
+.cards{
+  --img-w: 200px;
+  --duration: 300ms;
+  --img-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: min(100% - 4rem, 800px);
+  margin-inline: auto;
+  display: grid;
+  
+  counter-reset: my-counter;
+}
+
+.card{
+  --cards-grid-cols: auto;
+  --cards-grid-rows: var(--img-w) auto;
+  --cards-grid-gap: 2rem;
+  --cards-footer-justify: center;
+  
+  grid-area: 1/1;
+  display: grid;
+ place-items: center; 
+  grid-template-columns: var(--cards-grid-cols);
+  grid-template-rows: var(--cards-grid-rows);
+  gap: var(--cards-grid-gap);
+  
+}
+
+@media (600px < width){
+  .card{
+      --cards-grid-cols: var(--img-w) auto;
+      --cards-grid-rows: auto;
+      --cards-grid-gap: 4rem;
+      --cards-footer-justify: start;
+  }
+}
+
+
+.card-img{
+  width: 200px;
+  height: 200px;
+  aspect-ratio: 1 / 1 ;
+  rotate: var(--angle, 0deg);
+  border-radius: 10px;
+  border: 3px solid #FFF;
+  overflow: hidden;
+  transform-origin: center;
+  object-fit: cover;
+  box-shadow: 0 0 5px 3px rgba(0 0 0 / .05);
+}
+
+
+
+input:nth-of-type(1):checked + .card ~ .card > .card-img{
+  animation: straighten-img-1 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.card:has(~input:nth-of-type(2):checked) > .card-img,
+input:nth-of-type(2):checked + .card ~ .card > .card-img{
+  animation: straighten-img-2 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.card:has(~input:nth-of-type(3):checked) > .card-img,
+input:nth-of-type(3):checked + .card ~ .card > .card-img{
+  animation: straighten-img-3 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.card:has(~input:nth-of-type(4):checked) > .card-img,
+input:nth-of-type(4):checked + .card ~ .card > .card-img{
+  animation: straighten-img-4 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.card:has(~input:nth-of-type(5):checked) > .card-img,
+input:nth-of-type(5):checked + .card ~ .card > .card-img{
+  animation: straighten-img-5 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.card:has(~input:nth-of-type(6):checked) > .card-img,
+input:nth-of-type(6):checked + .card ~ .card > .card-img{
+  animation: straighten-img-6 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.card:has(~input:nth-of-type(7):checked) > .card-img,
+input:nth-of-type(7):checked + .card ~ .card > .card-img{
+  animation: straighten-img-7 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+/* as CSS can't remove animations, we change the animation according to which checkbox is checked  - all animations are the same (would be simpler with SCSS) */
+@keyframes straighten-img-1 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-2 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-3 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-4 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-5 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-6 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-7 { 50%{ --angle: 0deg;} }
+
+
+/* stacking order - these are updated according to which card is selected */
+.card{
+  z-index: -1;
+}
+input:checked + .card{
+  z-index:10 !important;
+}
+/* next card checked - place behind */
+.card:has(+input:checked){
+  z-index:9;
+}
+/* next card +1 checked - place behind */
+.card:has(+input + .card + input:checked){
+  z-index:8;
+}
+/* next card +2 checked - place behind */
+.card:has(+input + .card +input + .card + input:checked){
+  z-index:7;
+}
+/* next card +3 checked - place behind */
+.card:has(+input + .card +input + .card +input + .card + input:checked){
+  z-index:6;
+}
+/* next card +4 checked - place behind */
+.card:has(+input + .card +input + .card +input + .card +input + .card + input:checked){
+  z-index:5;
+}
+/* next card +5 checked - place behind */
+.card:has(+input + .card +input + .card +input +input + .card +input + .card +input + .card + input:checked){
+  z-index:4;
+}
+/* next card +6 checked - place behind */
+.card:has(+input + .card +input + .card +input  + .card +input +input + .card +input + .card +input + .card + input:checked){
+  z-index:3;
+}
+
+.card-data{
+  display: grid;
+  gap: 1rem;
+}
+.card-data > .card-num{
+  opacity: var(--data-opacity, 0);
+  font-size: .8rem;
+  color: #666;
+}
+.card-data > p{
+  font-size: 0.9rem;
+
+}
+.card-data > h2,
+.card-data > p{
+  transition: var(--duration) ease-in-out;
+  transition-delay: var(--data-delay,0ms);
+  opacity: var(--data-opacity, 0);
+  translate: 0 var(--data-y, 20px);
+}
+.card-data > footer{
+  display: flex;
+  justify-content: var(--cards-footer-justify);
+  gap: 2rem;
+}
+.card-data > footer label{
+  margin-block-start: auto;
+  cursor: pointer;
+  pointer-events: var(--card-events, none);
+  opacity: var(--data-opacity, 0);
+  transition: color var(--duration) ease-in-out;
+  color: var(--label-clr-txt,#000);
+  background-color:var(--label-clr-bg,#EEE);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  transition: background-color 300ms ease-in-out,color  300ms ease-in-out;
+}
+
+
+input:checked:focus-visible + .card > .card-data > footer label,
+.card-data > footer label:hover{
+  --label-clr-txt: #FFF;
+  --label-clr-bg: steelblue;
+}
+
+input:checked + .card{
+  --data-opacity: 1;
+  --data-y: 0;
+  --data-delay: var(--duration);
+  --card-events: auto;
+  transition: z-index;
+  transition-delay: 300ms;
+  /*z-index: 1;*/
+}
+
+input:checked +.card > .card-img{
+  animation: reveal-img calc(var(--duration) * 2) forwards;
+}
+
+@keyframes reveal-img{
+  50%{
+    translate: -150% 0;
+    --angle: 0deg;
+  }
+}
