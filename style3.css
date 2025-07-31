@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+    @font-face {
+        font-family: 'Algerian'; /* Algerian */
+        src: C:\Users\mhfir\OneDrive\Desktop\Project 1\ALGER.TTF
+        font-weight: normal; 
+                font-style: normal;  
+                }
+    
+        font-family: 'MyCustomFont', sans-serif; /* Fallback font included for safety */
+    }
+
+    h1 {
+        font-family: 'Algerian', serif;
+
+        text-align: center; color: rgb(0, 0, 0);
+   margin-top: 60px; font-size: 70px;
+}
+h2{
+    text-align: center; color: rgb(0, 0, 0)
+   
+}
+
+h3{
+    text-align: left; font-size: xx-large;;
+    text-align: left; color: rgb(0, 0, 0);
+    font-family: 'Gabriola'; /* Gabriola */
+        src: C:\Users\mhfir\OneDrive\Desktop\Project 1\ALGER.TTF;
+        font-weight: 500; 
+                font-style: normal;
+}
+
+h4, h6, h7 {
+    text-align:left; font-size: x-large;;
+    text-align: left; color: rgb(0, 0, 0);
+    font-family: 'Gabriola'; /* Gabriola */
+        src: C:\Users\mhfir\OneDrive\Desktop\Project 1\ALGER.TTF;
+        font-weight: 500; 
+                font-style: normal;
+}
+
+h5{
+    
+text-align: left; font-size: xx-large;;
+    text-align: left; color: rgb(0, 0, 0);
+    font-family: 'Gabriola'; /* Gabriola */
+        src: C:\Users\mhfir\OneDrive\Desktop\Project 1\ALGER.TTF;
+        font-weight: 500; 
+                font-style: normal;
+                
+}
+
+p{ text-align: center;
+    color: rgb(0, 0, 0)
+}
+li{
+    color: rgb(0, 0, 0)
+}
+button{
+    text-align: center;
+}
+img{
+    display: block;
+  margin: auto;
+  width: 30%;
+ 
+}
+body{
+    background-color:antiquewhite ;
+}
+p{
+   font-size: 20px
+}
+
+    
